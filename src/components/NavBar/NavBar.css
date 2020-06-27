@@ -1,0 +1,33 @@
+.navContainer {
+   height: 98%;
+   min-width: 208px;
+   width: 20%;
+   margin: 10px 5px;
+   background: rgba(46, 67, 99, 0.6);
+   font-size: 35px;
+}
+
+.greeting {
+   padding: 15px 10px;
+   font-weight: 400;
+}
+
+.white {
+   color: rgb(218, 234, 247);
+}
+
+ul {
+   list-style: none;
+   color: #08f7fe;
+   padding: 0;
+}
+
+li {
+   padding: 10px;
+   transition: 0.3s;
+}
+
+li:hover {
+   color: #fe53bb;
+   cursor: pointer;
+}
