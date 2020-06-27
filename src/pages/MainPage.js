@@ -6,6 +6,7 @@ import './MainPage.css';
 import SmallBox from '../components/SmallBox/SmallBox';
 import BigBox from '../components/BigBox/BigBox';
 import TallBox from '../components/TallBox/TallBox';
+import LongBox from '../components/LongBox/LongBox';
 
 export class MainPage extends Component {
    render() {
@@ -17,8 +18,7 @@ export class MainPage extends Component {
                   <div className='topMiddleContainer'>
                      <SmallBox />
                      <SmallBox />
-                     <SmallBox />
-                     <SmallBox />
+                     <LongBox />
                   </div>
                   <BigBox />
                </div>

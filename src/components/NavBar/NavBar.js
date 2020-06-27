@@ -1,27 +1,24 @@
 import React from 'react';
+import Typical from 'react-typical';
 
 import './NavBar.css';
 
-let i = 0;
-let greet = '';
-
-const greeting = text => {
-   const string = text ? `Hello ${text}` : `Hello guest`;
-   console.log(string);
-   if (i < string.length) {
-      greet += `${string.charAt(i)}`;
-      console.log(greet);
-      i++;
-   }
-   return greet;
-};
-
-// greeting();
+const name = 'Robin';
 
 const NavBar = () => {
    return (
       <div className='navContainer'>
-         <h4 className='greeting white'>Hello guest</h4>
+         <h4 className='greeting white'>
+            <Typical
+               steps={[
+                  `Hello ${name ? name : 'guest'}`,
+                  5000,
+                  'Ready to Conquer?',
+                  5000,
+                  `Enjoy your stay`
+               ]}
+            ></Typical>
+         </h4>
          <ul>
             <li>login</li>
             <li>register</li>
