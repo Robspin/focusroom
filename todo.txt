@@ -3,3 +3,5 @@
 - Create function for randomly picking a line of text from array to render as greeting
 
 - Make reusable component from btc ticker.
+
+- Think about in wich component to put API data and how to manage it.

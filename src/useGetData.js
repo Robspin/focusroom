@@ -6,7 +6,7 @@ const useGetData = ticker => {
 
    const fetchData = async ticker => {
       const response = await axios.get(
-         `https://api.binance.com/api/v3/ticker/price?symbol=${ticker}`
+         `https://api.binance.com/api/v3/ticker/${ticker}`
       );
 
       setData(response.data);
@@ -14,6 +14,8 @@ const useGetData = ticker => {
 
    useEffect(() => {
       fetchData(ticker);
+
+      setInterval(() => fetchData(ticker), 2500);
    }, [ticker]);
 
    return data;
