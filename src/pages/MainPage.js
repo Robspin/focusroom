@@ -4,9 +4,10 @@ import NavBar from '../components/NavBar/NavBar';
 
 import './MainPage.css';
 import SmallBox from '../components/SmallBox/SmallBox';
+import BTCPrice from '../components/BTCPrice/BTCPrice';
 import BigBox from '../components/BigBox/BigBox';
 import TallBox from '../components/TallBox/TallBox';
-import LongBox from '../components/LongBox/LongBox';
+import TimeBox from '../components/TimeBox/TimeBox';
 
 export class MainPage extends Component {
    render() {
@@ -16,9 +17,9 @@ export class MainPage extends Component {
                <NavBar />
                <div className='middleContainer'>
                   <div className='topMiddleContainer'>
+                     <BTCPrice />
                      <SmallBox />
-                     <SmallBox />
-                     <LongBox />
+                     <TimeBox />
                   </div>
                   <BigBox />
                </div>

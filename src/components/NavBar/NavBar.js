@@ -15,7 +15,7 @@ const NavBar = () => {
                   5000,
                   'Ready to Conquer?',
                   5000,
-                  `Enjoy your stay`
+                  'Enjoy your stay'
                ]}
             ></Typical>
          </h4>

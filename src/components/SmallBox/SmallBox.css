@@ -1,7 +1,6 @@
 .SmallContainer {
    height: 95%;
-   opacity: 60%;
    width: 25%;
    margin: 10px 5px;
-   background: #2e4363;
+   background: rgba(46, 67, 99, 0.6);
 }

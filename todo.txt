@@ -1,0 +1,5 @@
+~ ToDo ~
+
+- Create function for randomly picking a line of text from array to render as greeting
+
+- Make reusable component from btc ticker.

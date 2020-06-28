@@ -1,0 +1,33 @@
+.SmallContainer {
+   height: 95%;
+   width: 25%;
+   margin: 10px 5px;
+   background: rgba(46, 67, 99, 0.6);
+}
+
+.ticker {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+   font-size: 35px;
+   padding: 15px;
+   color: #fff;
+}
+
+.positive {
+   color: #08f7fe;
+}
+
+.negative {
+   color: #fe53bb;
+}
+
+.price {
+   padding-top: 40px;
+}
+
+.percent {
+   font-size: 25px;
+   margin-left: 10px;
+}
