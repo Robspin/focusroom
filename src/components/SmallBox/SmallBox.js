@@ -1,9 +1,9 @@
-import React from 'react';
+// import React from 'react';
 
-import './SmallBox.css';
+// import './SmallBox.css';
 
-const SmallBox = () => {
-   return <div className='SmallContainer'></div>;
-};
+// const SmallBox = () => {
+//    return <div className='SmallContainer'></div>;
+// };
 
-export default SmallBox;
+// export default SmallBox;

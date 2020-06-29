@@ -2,6 +2,12 @@
 
 - Create function for randomly picking a line of text from array to render as greeting
 
+- Fix color changing on negative or positive pct tickers
+
 - Make reusable component from btc ticker.
+
+- Look into React Transitions (animations)
+
+- Look into how to display charting data
 
 - Think about in wich component to put API data and how to manage it.

@@ -1,27 +1,26 @@
 import React from 'react';
 
-import './BTCPrice.css';
+import './PriceBox.css';
 
 import useGetData from '../../useGetData';
 
-const BTCPrice = () => {
-   // Get BTC price and convert to right format
-   let currentData = useGetData('price?symbol=BTCUSDT');
+const PriceBox = ({ ticker }) => {
+   // Get price and convert to right format
+   let currentData = useGetData(`price?symbol=${ticker}`);
    let currentPrice = currentData.price;
    currentPrice = currentPrice ? currentPrice.slice(0, -6) : '';
 
-   // Get BTC 24H change
-   let x = useGetData('24hr?symbol=BTCUSDT');
+   // Get 24H change percentage
+   let x = useGetData(`24hr?symbol=${ticker}`);
    let currentPercent = x.priceChangePercent;
    currentPercent = currentPercent ? currentPercent.slice(0, -1) : '';
-   console.log(currentPercent);
 
    return (
       <div className='SmallContainer'>
          <div className='ticker'>
-            BTC/USDT{' '}
+            {ticker.substr(0, 3) + '/' + ticker.substr(3)}
             <div>
-               <div className='price positive'>
+               <div className='price negative'>
                   {currentPrice}
                   <span className='percent negative'>{`${currentPercent}%`}</span>
                </div>
@@ -31,4 +30,4 @@ const BTCPrice = () => {
    );
 };
 
-export default BTCPrice;
+export default PriceBox;
