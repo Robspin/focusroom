@@ -1,7 +1,7 @@
 .BigContainer {
    height: 68%;
-   opacity: 60%;
    width: 99%;
    margin: 10px 5px 0px 5px;
-   background: #2e4363;
+   background: rgba(46, 67, 99, 0.6);
+   overflow: hidden;
 }
